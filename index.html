@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northfield Herbary – Herbal tea for the quiet hours</title>
+  <meta name="description" content="Herbal blends for the quiet hours, steeped slowly and poured with care. Join the Northfield Herbary newsletter and get 15% off your first box.">
+  <meta name="theme-color" content="#6D2C3C">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Zet de klasse "js" meteen, zodat inhoud die infadet niet eerst even zichtbaar flitst -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Gedeelde vormen: het blad (los) en de bladvorm uit de campagne (venster) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="leaf" viewBox="0 0 100 160">
+        <path d="M50 2 C86 36 96 98 50 158 C4 98 14 36 50 2 Z"/>
+        <path d="M50 18 L50 150" fill="none" stroke="#2C3327" stroke-opacity=".25" stroke-width="2"/>
+      </symbol>
+      <symbol id="leaf-outline" viewBox="0 0 100 160">
+        <path d="M50 2 C86 36 96 98 50 158 C4 98 14 36 50 2 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M50 18 L50 150" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#signup">Skip to newsletter sign-up</a>
+
+  <main>
+
+    <!-- 1 / HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__text">
+        <p class="eyebrow" data-reveal>Northfield Herbary · Herbal tea</p>
+        <h1 id="hero-title" data-reveal>Where the day softens.</h1>
+        <p class="hero__lead" data-reveal>Herbal blends for the quiet hours, steeped slowly and poured with care.</p>
+        <div class="button-row" data-reveal>
+          <a class="button button--primary" href="#signup">Join our newsletter</a>
+          <a class="button button--secondary" href="#blends">Discover the blends</a>
+        </div>
+      </div>
+      <figure class="hero__visual soft-image" data-reveal="image">
+        <img src="images/hero-rooibos.jpg" width="1408" height="768" fetchpriority="high"
+             alt="A wine-red cup of rooibos tea, a teapot and a bowl of forest berries on a wooden bench in an autumn forest.">
+      </figure>
+    </section>
+
+    <!-- 2 / OUR STORY -->
+    <section class="story section--berry" id="story" aria-labelledby="story-title">
+      <!-- Decoratieve blaadjes: komen in beeld bij het scrollen -->
+      <div class="leaves" aria-hidden="true">
+        <svg class="leaf leaf--mint" style="--x: 3%; --y: 10%; --size: 4.5rem; --rot: -28deg; --delay: 0ms"><use href="#leaf"/></svg>
+        <svg class="leaf leaf--sand-line" style="--x: 9%; --y: 72%; --size: 3rem; --rot: 34deg; --delay: 140ms"><use href="#leaf-outline"/></svg>
+        <svg class="leaf leaf--moss" style="--x: 93%; --y: 84%; --size: 3.25rem; --rot: 152deg; --delay: 260ms"><use href="#leaf"/></svg>
+        <svg class="leaf leaf--mint" style="--x: 47%; --y: 4%; --size: 2.25rem; --rot: 70deg; --delay: 380ms"><use href="#leaf"/></svg>
+      </div>
+      <div class="container story__grid">
+        <div class="story__text">
+          <h2 id="story-title" data-reveal>Our origin story</h2>
+          <p data-reveal>Northfield Herbary began in a small kitchen garden at the edge of a pine forest. We grew what the seasons gave us – chamomile in June, berries in late summer, ginger dried by the stove in winter – and steeped it for friends who needed an evening to slow down.</p>
+          <p data-reveal>Today, Northfield Herbary carries that same garden in every blend. No rush, no noise. Just leaves, warm water and a moment that belongs to you.</p>
+        </div>
+        <figure class="story__image soft-image" data-reveal="image">
+          <img src="images/story-hands.jpg" width="1408" height="768" loading="lazy"
+               alt="Hands holding a cup of herbal tea among soft green willow leaves.">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3 / THE BLENDS -->
+    <section class="blends" id="blends" aria-labelledby="blends-title">
+      <!-- De foto van de vier dozen, licht geblurd als achtergrond -->
+      <div class="blends__bg" aria-hidden="true">
+        <img src="images/blends.jpg" width="1024" height="1024" loading="lazy" alt="">
+      </div>
+      <div class="leaves" aria-hidden="true">
+        <svg class="leaf leaf--sand-line" style="--x: 6%; --y: 14%; --size: 3.5rem; --rot: -18deg; --delay: 0ms"><use href="#leaf-outline"/></svg>
+        <svg class="leaf leaf--moss" style="--x: 90%; --y: 9%; --size: 4rem; --rot: 24deg; --delay: 180ms"><use href="#leaf"/></svg>
+      </div>
+      <div class="container">
+        <h2 id="blends-title" data-reveal>Four blends, four quiet moments.</h2>
+
+        <!-- Carrousel met theezakje-labels: twee tegelijk zichtbaar, de stippen tonen dat er vier zijn -->
+        <div class="tag-carousel" role="region" aria-roledescription="carousel" aria-label="Our four blends" data-reveal>
+          <ul class="tag-carousel__track" tabindex="0" aria-label="Blends, scroll sideways to see all four">
+            <li class="tea-tag" aria-roledescription="slide" aria-label="1 of 4">
+              <div class="tea-tag__card">
+                <p class="tea-tag__number">No. 01</p>
+                <h3>Chamomile &amp; Honey</h3>
+                <p class="tea-tag__line">A gentle close to the day.</p>
+                <p class="tea-tag__info">Caffeine-free</p>
+              </div>
+            </li>
+            <li class="tea-tag" aria-roledescription="slide" aria-label="2 of 4">
+              <div class="tea-tag__card">
+                <p class="tea-tag__number">No. 02</p>
+                <h3>Rooibos &amp; Forest Berries</h3>
+                <p class="tea-tag__line">Your moment of calm.</p>
+                <p class="tea-tag__info">Caffeine-free</p>
+              </div>
+            </li>
+            <li class="tea-tag" aria-roledescription="slide" aria-label="3 of 4">
+              <div class="tea-tag__card">
+                <p class="tea-tag__number">No. 03</p>
+                <h3>Green Tea &amp; Lemongrass</h3>
+                <p class="tea-tag__line">Nature, gently steeped.</p>
+                <p class="tea-tag__info">Light and fresh</p>
+              </div>
+            </li>
+            <li class="tea-tag" aria-roledescription="slide" aria-label="4 of 4">
+              <div class="tea-tag__card">
+                <p class="tea-tag__number">No. 04</p>
+                <h3>Ginger &amp; Turmeric</h3>
+                <p class="tea-tag__line">Warmth in every cup.</p>
+                <p class="tea-tag__info">Spiced and warming</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="tag-carousel__controls">
+            <button class="tag-carousel__btn" type="button" data-dir="-1" aria-label="Previous blend">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+            </button>
+            <div class="tag-carousel__dots" role="group" aria-label="Choose a blend">
+              <button class="tag-carousel__dot" type="button" data-index="0" aria-label="Show blend 1: Chamomile &amp; Honey"></button>
+              <button class="tag-carousel__dot" type="button" data-index="1" aria-label="Show blend 2: Rooibos &amp; Forest Berries"></button>
+              <button class="tag-carousel__dot" type="button" data-index="2" aria-label="Show blend 3: Green Tea &amp; Lemongrass"></button>
+              <button class="tag-carousel__dot" type="button" data-index="3" aria-label="Show blend 4: Ginger &amp; Turmeric"></button>
+            </div>
+            <button class="tag-carousel__btn" type="button" data-dir="1" aria-label="Next blend">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+          <!-- Niet zichtbaar, wel voorgelezen door schermlezers -->
+          <p class="tag-carousel__count sr-only" aria-live="polite"><span class="tag-carousel__range">1–2</span> of 4 blends</p>
+        </div>
+
+        <div class="button-row button-row--center" data-reveal>
+          <a class="button button--primary" href="#signup">Get 15% off your first box</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 / SIGN-UP (MailerLite embedded form) -->
+    <section class="signup section--berry" id="signup" aria-labelledby="signup-title" tabindex="-1">
+      <div class="leaves" aria-hidden="true">
+        <svg class="leaf leaf--sand-line" style="--x: 4%; --y: 78%; --size: 3.5rem; --rot: 20deg; --delay: 0ms"><use href="#leaf-outline"/></svg>
+        <svg class="leaf leaf--mint" style="--x: 44%; --y: 12%; --size: 2.5rem; --rot: -50deg; --delay: 160ms"><use href="#leaf"/></svg>
+      </div>
+      <div class="container signup__grid">
+        <div class="signup__text">
+          <h2 id="signup-title" data-reveal>Stay up to date</h2>
+          <p data-reveal>Subscribe to our newsletter and be the first to hear from us when there is news to be shared.</p>
+          <p data-reveal><strong>As a welcome, 15% off your first box.</strong></p>
+        </div>
+
+        <div id="mlb2-47655798" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-47655798" data-reveal>
+          <div class="ml-form-align-center">
+            <div class="ml-form-embedWrapper embedForm">
+
+              <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2743938/forms/202469548471879036/subscribe" data-code="" method="post" target="_blank">
+                  <div class="ml-form-formContent">
+
+                    <div class="ml-form-fieldRow">
+                      <div class="ml-field-group ml-field-name">
+                        <label class="field-label" for="ml-name">First name</label>
+                        <input id="ml-name" aria-label="name" type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="Your first name" autocomplete="given-name">
+                      </div>
+                    </div>
+
+                    <div class="ml-form-fieldRow">
+                      <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                        <label class="field-label" for="ml-email">Email <span class="required" aria-hidden="true">*</span></label>
+                        <input id="ml-email" aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="you@example.com" autocomplete="email">
+                      </div>
+                    </div>
+
+                    <div class="ml-form-fieldRow ml-last-item">
+                      <div class="ml-field-group ml-field-interesses ml-validate-required">
+                        <!-- Opt-in: in MailerLite stored in the field "interesses" -->
+                        <fieldset class="custom-checkbox-radio-list">
+                          <legend class="sr-only">Newsletter consent (required)</legend>
+                          <div class="custom-control custom-checkbox">
+                            <input name="fields[interesses][]" aria-required="true" class="custom-control-input" type="checkbox" value="I’d like to receive the Northfield Herbary newsletter. I can unsubscribe at any time." id="checkbox-47655798-23-0">
+                            <label class="custom-control-label" for="checkbox-47655798-23-0">I’d like to receive the Northfield Herbary newsletter. I can unsubscribe at any time. <span class="required" aria-hidden="true">*</span></label>
+                          </div>
+                          <p class="consent-error">Please tick this box to subscribe.</p>
+                        </fieldset>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <input type="hidden" name="ml-submit" value="1">
+
+                  <div class="ml-form-embedSubmit">
+                    <button type="submit" class="primary button button--primary">Join our newsletter</button>
+                    <button disabled="disabled" style="display: none;" type="button" class="loading button button--primary">
+                      <span class="ml-form-embedSubmitLoad"></span>
+                      <span class="sr-only">Loading...</span>
+                    </button>
+                  </div>
+
+                  <p class="form-note">We only use your details to send you our newsletter.</p>
+
+                  <input type="hidden" name="anticsrf" value="true">
+                </form>
+              </div>
+
+              <div class="ml-form-successBody row-success" style="display: none" role="status">
+                <div class="ml-form-successContent">
+                  <h3>Thank you.</h3>
+                  <p>You are on the list. Your first letter, and your 15% welcome, are on their way.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 5 / FOOTER: avondlucht. Het vlak wordt donkerder naarmate je naar beneden scrolt. -->
+  <footer class="footer">
+    <div class="leaves" aria-hidden="true">
+      <svg class="leaf leaf--mint" style="--x: 88%; --y: 18%; --size: 3rem; --rot: -140deg; --delay: 200ms"><use href="#leaf"/></svg>
+      <svg class="leaf leaf--sand-line" style="--x: 94%; --y: 64%; --size: 2.25rem; --rot: 30deg; --delay: 320ms"><use href="#leaf-outline"/></svg>
+    </div>
+    <div class="footer__inner">
+      <!-- Grote bladvorm, half afgesneden in de hoek, met een avondfoto erin -->
+      <!-- De rechterlob loopt nu in een boog door tot de onderrand, i.p.v. recht afgesneden te worden -->
+      <svg class="footer__leaf" viewBox="0 0 620 675" preserveAspectRatio="xMinYMax meet" aria-hidden="true" focusable="false" data-reveal="image">
+        <defs>
+          <path id="window-path" d="M0 675 L0 350 C8 240 25 130 47 72 C90 170 175 250 205 320 C222 365 222 410 220 445 C245 405 265 350 300 310 C350 255 420 220 472 193 C462 250 465 330 440 390 C420 440 390 490 360 525 C430 505 510 508 560 545 C600 575 615 625 620 675 Z"/>
+          <clipPath id="window-clip"><use href="#window-path"/></clipPath>
+          <filter id="window-inner-shadow" x="0" y="0" width="100%" height="100%">
+            <feFlood flood-color="#2C3327" flood-opacity=".6"/>
+            <feComposite in2="SourceAlpha" operator="out"/>
+            <feGaussianBlur stdDeviation="16"/>
+            <feComposite in2="SourceAlpha" operator="in"/>
+          </filter>
+        </defs>
+        <g clip-path="url(#window-clip)">
+          <image href="images/footer-meadow.jpg" x="0" y="0" width="620" height="675" preserveAspectRatio="xMidYMid slice"/>
+          <use href="#window-path" fill="#000" filter="url(#window-inner-shadow)"/>
+        </g>
+      </svg>
+
+      <div class="footer__text">
+        <p class="footer__brand" data-reveal>Northfield Herbary</p>
+        <p class="footer__line" data-reveal>Until the next quiet hour.</p>
+        <p class="footer__invite" data-reveal>Between letters, we share garden notes, slow rituals and the first glimpse of new blends. Come along on Instagram.</p>
+        <!-- TODO: replace with the Northfield Herbary Instagram URL once the account exists -->
+        <div data-reveal>
+          <a class="button button--light" href="https://www.instagram.com/" target="_blank" rel="noopener">
+            Explore our socials<span class="sr-only"> (opens Instagram in a new tab)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- MailerLite embedded form scripts (unchanged) -->
+  <script>
+    function ml_webform_success_47655798() {
+      var $ = ml_jQuery || jQuery;
+      $('.ml-subscribe-form-47655798 .row-success').show();
+      $('.ml-subscribe-form-47655798 .row-form').hide();
+    }
+  </script>
+  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
+  <script>
+    fetch("https://assets.mailerlite.com/jsonp/2743938/forms/202469548471879036/takel");
+  </script>
+</body>
+</html>
